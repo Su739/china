@@ -1,0 +1,2 @@
+# china
+select china area
