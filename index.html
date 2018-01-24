@@ -2,6 +2,29 @@
   <head>
     <meta charset="utf-8" />
     <style>
+       #u2{
+        background-color: bisque;
+        width: 50em;
+      }
+      #u1{
+        background-color: rgb(215, 215, 219);
+        width: 50em;
+      }
+      #u2 li, #u1 li{
+        float: left;
+        margin: 0 2em;
+        width: 10em;
+      }
+      .clear:after{
+        content: ".";
+        height: 0;
+        visibility: hidden;
+        display: block;
+        clear: both;
+      }
+      .active{
+        background-color: aquamarine;
+      }
     </style>
     <!--[if IE]>
     <link href="css/stylesheets/ie.css" rel="stylesheet" type="text/css" />
@@ -11,14 +34,17 @@
     <script>
       require(['./js/common'], function() {
           require(['app/list']);
+          require(['app/try']);
         });
     </script>
   </head>
   <body>
-      <div id="area-items">
-        <ul id="u1"></ul>
-        <ul id="u2"></ul>
-        <ul></ul>
+        <input placeholder="输入城市" type="text" readonly/>
+        <div id="area-items" hidden>
+          <ul id="u1" class="clear"></ul>
+          <ul id="u2" class="clear"></ul>
+          <ul></ul>
+      </div>
       </div>
   </body>
 </html>

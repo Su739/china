@@ -1,5 +1,5 @@
-
-    [
+define(function area(){
+    return [
     {
         "children": [
             {
@@ -13706,3 +13706,4 @@
         "label": "澳门特别行政区"
     }
  ]
+});
