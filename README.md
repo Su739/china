@@ -4,6 +4,6 @@
 
 #### 点击下面链接查看效果
 
-[我是链接](https://su739.github.io/china/){:target="\_blank"}
+[我是链接](https://su739.github.io/china/?_blank)
 
 
